@@ -7,113 +7,119 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
     <link rel="icon" href="assets/logo.png" type="image/icon">
     <title>Right Move Group</title>
-
-    <style>
-        html {
-            scroll-behavior: smooth;
-        }
-    </style>
 </head>
 <body class="bg-white font-sans text-gray-800">
+<!-- Top Green Bar (Fixed valid Tailwind classes) -->
+<div class="absolute top-0 left-0 w-full h-6 z-50 bg-green-900/80"></div>
 
-<section id="home" class="relative min-h-screen">
-  <div class="absolute inset-0 bg-cover bg-center" style="background-image: url('assets/1.png');"></div>
-  <div class="absolute inset-0 bg-white/70"></div>
+<!-- Hero Section -->
+<div class="absolute top-0 left-0 w-full h-5 z-50 bg-[#356e4c]"></div>
 
-  <div class="relative z-10 max-w-7xl mx-auto">
-    <nav class="flex items-center justify-between px-10 py-6">
-      <div class="flex items-center gap-3">
-        <img src="assets/logo.png" class="h-10 mix-blend-multiply" alt="logo">
-        <span class="font-bold tracking-wide text-green-800 text-lg">RIGHT MOVE GROUP</span>
-      </div>
-      <div class="space-x-10 text-gray-800 font-medium">
-        <a href="#home" class="hover:text-green-600 transition">Home</a>
-        <a href="#services" class="hover:text-green-600 transition">Services</a>
-        <a href="#clients" class="hover:text-green-600 transition">Clients & Industries</a>
-        <a href="#contact" class="hover:text-green-600 transition">Contact</a>
-      </div>
-    </nav>
+<section class="relative min-h-full lg:h-[550px] w-full flex flex-col font-sans">
+    <div class="absolute inset-0 bg-cover bg-center" style="background-image: url('assets/1.png');"></div>
+    <div class="absolute inset-0 bg-white/80 md:bg-white/70"></div>
 
-    <header class="px-10 mt-20">
-      <div class="max-w-2xl space-y-6">
-        <h1 class="text-5xl md:text-6xl font-bold leading-tight text-green-700">Consulting and <br> Bookkeeping Ltd</h1>
-        <p class="text-lg text-gray-700">We Provide Financial Roadmap For Your Business Growth</p>
-        <button class="mt-4 bg-green-700 text-white px-10 py-4 font-bold tracking-wide hover:bg-white hover:text-green-600 duration-300 transition">
-          LEARN MORE
-        </button>
-      </div>
-    </header>
-  </div>
+    <div class="relative z-10 max-w-7xl mx-auto w-full flex-1 flex flex-col">
+        <nav class="absolute top-12 right-6 md:right-12 lg:right-24 z-50 flex justify-end">
+            <button id="mobile-menu-btn" class="md:hidden text-green-800 text-3xl focus:outline-none z-50">
+                <i class="fa-solid fa-bars"></i>
+            </button>
+
+            <div id="nav-links" class="hidden absolute top-12 right-0 bg-white shadow-lg p-6 rounded min-w-[200px] flex-col space-y-4 md:static md:bg-transparent md:shadow-none md:p-0 md:min-w-0 md:flex md:flex-row md:items-center md:space-y-0 md:space-x-10 text-gray-800 transition-all">
+                <a href="index.html" class="text-base hover:text-green-700 transition">Home</a>
+                <a href="about.html" class="text-base hover:text-green-700 transition whitespace-nowrap">About Us</a>
+                <a href="clients.html" class="text-base hover:text-green-700 transition whitespace-nowrap">Clients & Industries</a>
+                <a href="contact.html" class="text-base hover:text-green-700 transition">Contact</a>
+            </div>
+        </nav>
+
+        <header class="px-6 md:px-12 lg:px-24 flex-1 flex flex-col pt-12 pb-12">
+            <div class="flex items-center gap-4 mb-20 md:mb-28">
+                <img src="assets/logo.png" class="h-16 md:h-36 mix-blend-multiply object-contain" alt="logo">
+                <span class="font-bold tracking-wide text-green-700 text-xl md:text-[28px]">RIGHT MOVE GROUP</span>
+            </div>
+
+            <div class="max-w-2xl space-y-4 md:space-y-5">
+                <h1 class="text-3xl md:text-2xl lg:text-3xl font-bold leading-tight text-green-700">Consulting and Bookkeeping</h1>
+                <p class="text-base md:text-[20px] font-normal text-gray-800">We Provide Financial Roadmap For Your Business Growth</p>
+                <button class="mt-6 bg-green-700 text-white px-8 md:px-14 py-2.5 text-sm font-bold tracking-widest hover:bg-white hover:text-green-700 border-2 border-transparent hover:border-green-700 duration-300 transition w-full md:w-auto">
+                    LEARN MORE
+                </button>
+            </div>
+        </header>
+    </div>
 </section>
 
-<section id="services" class="py-20 px-6 bg-[#f3f3f3] flex flex-col items-center scroll-mt-20">
+<!-- Services Section -->
+<section class="py-16 px-6 md:p-20 lg:p-28 bg-[#f3f3f3] flex flex-col items-center">
     <div class="text-center max-w-3xl mb-10">
-        <h2 class="text-4xl md:text-5xl font-bold mb-6 text-[#1e264f]">Helping Your Business Grow with Accurate Accounting</h2>
-        <p class="text-gray-600 text-lg mb-2">Reliable accounting, bookkeeping, and tax services tailored for small and growing businesses.</p>
-        <p class="text-gray-600 italic">We help you make informed financial decisions with confidence.</p>
+        <h2 class="text-3xl md:text-4xl font-bold mb-6 text-[#1e264f]">Helping Your Business Grow with Accurate Accounting</h2>
+        <p class="text-gray-600 text-base md:text-md mb-2">Reliable accounting, bookkeeping, and tax services tailored for small and growing businesses.</p>
+        <p class="text-gray-600">We help you make informed financial decisions with confidence.</p>
     </div>
 
-    <div class="bg-[#2d7a2d] text-white px-6 py-2 rounded-sm font-bold text-sm tracking-widest mb-16 uppercase">SERVICES OFFERED</div>
+    <div class="bg-[#2d7a2d] text-white px-6 py-2 rounded-sm font-bold text-sm tracking-widest mb-12 md:mb-16 uppercase text-center">SERVICES OFFERED</div>
 
-    <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-x-8 gap-y-12 max-w-7xl">
-        <div class="bg-white p-10 rounded-[60px] flex flex-col items-start shadow-sm hover:shadow-xl duration-300 transition-all cursor-pointer">
-            <div class="mb-4 w-14 h-14 bg-green-100 text-[#2d7a2d] rounded-full flex items-center justify-center">
+    <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6 md:gap-8 max-w-7xl w-full">
+        <!-- Service Cards (Identical content, adjusted padding for mobile) -->
+        <div class="bg-white p-8 md:p-10 rounded-[40px] md:rounded-[60px] flex flex-col items-start shadow-sm hover:shadow-xl duration-300 transition-all cursor-pointer">
+            <div class="mb-4 w-14 h-14 bg-green-100 text-[#2d7a2d] rounded-full flex items-center justify-center shrink-0">
                 <i class="fa-solid fa-calculator text-2xl"></i>
             </div>
             <h3 class="font-bold text-xl mb-3 text-[#1e264f]">Accounting</h3>
             <p class="leading-relaxed text-gray-600">Accurate financial records for informed business decisions.</p>
         </div>
 
-        <div class="bg-white p-10 rounded-[60px] flex flex-col items-start shadow-sm hover:shadow-xl duration-300 transition-all cursor-pointer">
-            <div class="mb-4 w-14 h-14 bg-green-100 text-[#2d7a2d] rounded-full flex items-center justify-center">
+        <div class="bg-white p-8 md:p-10 rounded-[40px] md:rounded-[60px] flex flex-col items-start shadow-sm hover:shadow-xl duration-300 transition-all cursor-pointer">
+            <div class="mb-4 w-14 h-14 bg-green-100 text-[#2d7a2d] rounded-full flex items-center justify-center shrink-0">
                 <i class="fa-solid fa-book text-2xl"></i>
             </div>
             <h3 class="font-bold text-xl mb-3 text-[#1e264f]">Bookkeeping</h3>
             <p class="leading-relaxed text-gray-600">Organized, up-to-date books providing a clear view of finances.</p>
         </div>
 
-        <div class="bg-white p-10 rounded-[60px] flex flex-col items-start shadow-sm hover:shadow-xl duration-300 transition-all cursor-pointer">
-            <div class="mb-4 w-14 h-14 bg-green-100 text-[#2d7a2d] rounded-full flex items-center justify-center">
+        <div class="bg-white p-8 md:p-10 rounded-[40px] md:rounded-[60px] flex flex-col items-start shadow-sm hover:shadow-xl duration-300 transition-all cursor-pointer">
+            <div class="mb-4 w-14 h-14 bg-green-100 text-[#2d7a2d] rounded-full flex items-center justify-center shrink-0">
                 <i class="fa-solid fa-users-gear text-2xl"></i>
             </div>
             <h3 class="font-bold text-xl mb-3 text-[#1e264f]">Payroll</h3>
             <p class="leading-relaxed text-gray-600">Smooth and compliant payroll processing for teams.</p>
         </div>
 
-        <div class="bg-white p-10 rounded-[60px] flex flex-col items-start shadow-sm hover:shadow-xl duration-300 transition-all cursor-pointer">
-            <div class="mb-4 w-14 h-14 bg-green-100 text-[#2d7a2d] rounded-full flex items-center justify-center">
+        <div class="bg-white p-8 md:p-10 rounded-[40px] md:rounded-[60px] flex flex-col items-start shadow-sm hover:shadow-xl duration-300 transition-all cursor-pointer">
+            <div class="mb-4 w-14 h-14 bg-green-100 text-[#2d7a2d] rounded-full flex items-center justify-center shrink-0">
                 <i class="fa-solid fa-building-columns text-2xl"></i>
             </div>
             <h3 class="font-bold text-xl mb-3 text-[#1e264f]">Corporate Tax Services</h3>
             <p class="leading-relaxed text-gray-600">Expert corporate tax guidance to minimize liabilities.</p>
         </div>
 
-        <div class="bg-white p-10 rounded-[60px] flex flex-col items-start shadow-sm hover:shadow-xl duration-300 transition-all cursor-pointer">
-            <div class="mb-4 w-14 h-14 bg-green-100 text-[#2d7a2d] rounded-full flex items-center justify-center">
+        <div class="bg-white p-8 md:p-10 rounded-[40px] md:rounded-[60px] flex flex-col items-start shadow-sm hover:shadow-xl duration-300 transition-all cursor-pointer">
+            <div class="mb-4 w-14 h-14 bg-green-100 text-[#2d7a2d] rounded-full flex items-center justify-center shrink-0">
                 <i class="fa-solid fa-briefcase text-2xl"></i>
             </div>
             <h3 class="font-bold text-xl mb-3 text-[#1e264f]">Business Entity Setup</h3>
             <p class="leading-relaxed text-gray-600">Setting up the right business structure for long-term success.</p>
         </div>
 
-        <div class="bg-white p-10 rounded-[60px] flex flex-col items-start shadow-sm hover:shadow-xl duration-300 transition-all cursor-pointer">
-            <div class="mb-4 w-14 h-14 bg-green-100 text-[#2d7a2d] rounded-full flex items-center justify-center">
+        <div class="bg-white p-8 md:p-10 rounded-[40px] md:rounded-[60px] flex flex-col items-start shadow-sm hover:shadow-xl duration-300 transition-all cursor-pointer">
+            <div class="mb-4 w-14 h-14 bg-green-100 text-[#2d7a2d] rounded-full flex items-center justify-center shrink-0">
                 <i class="fa-solid fa-gears text-2xl"></i>
             </div>
             <h3 class="font-bold text-xl mb-3 text-[#1e264f]">Accounting System Setup</h3>
             <p class="leading-relaxed text-gray-600">Tailored accounting systems streamlining workflow.</p>
         </div>
 
-        <div class="bg-white p-10 rounded-[60px] flex flex-col items-start shadow-sm hover:shadow-xl duration-300 transition-all cursor-pointer">
-            <div class="mb-4 w-14 h-14 bg-green-100 text-[#2d7a2d] rounded-full flex items-center justify-center">
+        <div class="bg-white p-8 md:p-10 rounded-[40px] md:rounded-[60px] flex flex-col items-start shadow-sm hover:shadow-xl duration-300 transition-all cursor-pointer">
+            <div class="mb-4 w-14 h-14 bg-green-100 text-[#2d7a2d] rounded-full flex items-center justify-center shrink-0">
                 <i class="fa-solid fa-file-invoice-dollar text-2xl"></i>
             </div>
             <h3 class="font-bold text-xl mb-3 text-[#1e264f]">Personal Tax Services</h3>
             <p class="leading-relaxed text-gray-600">Reliable personal tax filing ensuring compliance and accuracy.</p>
         </div>
 
-        <div class="bg-white p-10 rounded-[60px] flex flex-col items-start shadow-sm hover:shadow-xl duration-300 transition-all cursor-pointer">
-            <div class="mb-4 w-14 h-14 bg-green-100 text-[#2d7a2d] rounded-full flex items-center justify-center">
+        <div class="bg-white p-8 md:p-10 rounded-[40px] md:rounded-[60px] flex flex-col items-start shadow-sm hover:shadow-xl duration-300 transition-all cursor-pointer">
+            <div class="mb-4 w-14 h-14 bg-green-100 text-[#2d7a2d] rounded-full flex items-center justify-center shrink-0">
                 <i class="fa-solid fa-percent text-2xl"></i>
             </div>
             <h3 class="font-bold text-xl mb-3 text-[#1e264f]">GST/HST Filing</h3>
@@ -122,88 +128,48 @@
     </div>
 </section>
 
-<section id="clients" class="py-20 px-10 bg-[#f9f7f0] scroll-mt-20">
-    <h2 class="text-5xl font-serif text-[#2d7a2d] mb-16 px-4">Clients & <br> Industries</h2>
-    <div class="flex flex-wrap justify-center gap-0 max-w-7xl mx-auto">
-        <div class="group w-full md:w-1/4 bg-[#86b691] p-6 flex flex-col items-center transition-all duration-300">
+<!-- Clients Section -->
+<section id="clients" class="py-16 md:py-20 px-6 md:px-10 bg-[#f9f7f0] scroll-mt-20 w-full">
+    <h2 class="text-4xl md:text-5xl font-serif text-[#2d7a2d] mb-12 md:mb-16 px-4 text-center md:text-left">Clients & <br class="hidden md:block"> Industries</h2>
+    <div class="flex flex-wrap justify-center max-w-7xl mx-auto w-full">
+        <!-- Kept the exact same sizing but made it responsive grid/wrap -->
+        <div class="group w-full sm:w-1/2 lg:w-1/4 bg-[#86b691] p-6 flex flex-col items-center transition-all duration-300">
             <h3 class="text-white font-bold mb-6 text-center h-12 flex items-center">Cleaning Companies</h3>
-            <div class="w-full aspect-square overflow-hidden shadow-lg">
+            <div class="w-full max-w-[250px] aspect-square overflow-hidden shadow-lg">
                 <img src="assets/2.png" class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-110">
             </div>
         </div>
-        <div class="group w-full md:w-1/4 bg-[#b2d3ba] p-6 flex flex-col items-center">
+        <div class="group w-full sm:w-1/2 lg:w-1/4 bg-[#b2d3ba] p-6 flex flex-col items-center">
             <h3 class="text-[#2d7a2d] font-bold mb-6 text-center leading-tight h-12 flex items-center">Property Management <br> Companies</h3>
-            <div class="w-full aspect-square overflow-hidden shadow-lg">
+            <div class="w-full max-w-[250px] aspect-square overflow-hidden shadow-lg">
                 <img src="assets/4.png" class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-110">
             </div>
         </div>
-        <div class="group w-full md:w-1/4 bg-[#f1fcf1] p-6 flex flex-col items-center border-x border-gray-100">
+        <div class="group w-full sm:w-1/2 lg:w-1/4 bg-[#f1fcf1] p-6 flex flex-col items-center border-y sm:border-y-0 sm:border-x border-gray-100">
             <h3 class="text-[#1e264f] font-bold mb-6 text-center h-12 flex items-center">Real Estate Investors</h3>
-            <div class="w-full aspect-square overflow-hidden shadow-lg">
+            <div class="w-full max-w-[250px] aspect-square overflow-hidden shadow-lg">
                 <img src="assets/5.png" class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-110">
             </div>
         </div>
-        <div class="group w-full md:w-1/4 bg-white p-6 flex flex-col items-center">
+        <div class="group w-full sm:w-1/2 lg:w-1/4 bg-white p-6 flex flex-col items-center">
             <h3 class="text-[#1e264f] font-bold mb-6 text-center leading-tight h-12 flex items-center">Other Businesses Across <br> Various Industries</h3>
-            <div class="w-full aspect-square overflow-hidden shadow-lg">
+            <div class="w-full max-w-[250px] aspect-square overflow-hidden shadow-lg">
                 <img src="assets/6.png" class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-110">
             </div>
         </div>
     </div>
 </section>
 
-<section id="contact" class="scroll-mt-20">
-    <div class="relative h-[450px] flex items-center px-10 overflow-hidden">
-        <img src="assets/3.png" class="absolute inset-0 w-full h-full object-cover" alt="Team meeting">
-        <div class="absolute inset-0 bg-black/50"></div>
-        <div class="relative z-10 max-w-3xl text-white">
-            <h1 class="text-5xl font-bold mb-6">Contact Us</h1>
-            <p class="text-lg leading-relaxed opacity-90">
-                We'd love to hear from you! Get in touch with our team for consultations, bookkeeping services, or any questions about improving your business finances.
-            </p>
-        </div>
-    </div>
-
-    <div class="py-20 px-10 bg-[#f3f3f3] flex flex-col items-center">
-        <div class="text-center max-w-2xl mb-16">
-            <h2 class="text-4xl font-bold text-[#1e264f] mb-4">Get in Touch</h2>
-            <p class="text-gray-600">We're here to guide you through our consulting and bookkeeping services and support your business growth.</p>
-        </div>
-        <div class="grid grid-cols-1 md:grid-cols-3 gap-8 max-w-6xl w-full">
-            <div class="bg-white p-10 rounded-[50px] shadow-sm hover:shadow-md transition">
-                <div class="w-14 h-14 bg-green-100 text-[#2d7a2d] rounded-full flex items-center justify-center mb-6">
-                    <i class="fa-solid fa-location-dot text-2xl"></i>
-                </div>
-                <h3 class="font-bold text-xl text-[#1e264f] mb-2">Our Location</h3>
-                <p class="text-gray-500 italic">------</p>
-            </div>
-            <div class="bg-white p-10 rounded-[50px] shadow-sm hover:shadow-md transition">
-                <div class="w-14 h-14 bg-green-100 text-[#2d7a2d] rounded-full flex items-center justify-center mb-6">
-                    <i class="fa-solid fa-phone text-2xl"></i>
-                </div>
-                <h3 class="font-bold text-xl text-[#1e264f] mb-2">Call Us On</h3>
-                <p class="text-gray-600 font-semibold">647-978-0874</p>
-            </div>
-            <div class="bg-white p-10 rounded-[50px] shadow-sm hover:shadow-md transition">
-                <div class="w-14 h-14 bg-green-100 text-[#2d7a2d] rounded-full flex items-center justify-center mb-6">
-                    <i class="fa-solid fa-envelope text-2xl"></i>
-                </div>
-                <h3 class="font-bold text-xl text-[#1e264f] mb-2">Email us</h3>
-                <a href="mailto:Accountant@RightMove-ca.com" class="text-gray-600 hover:text-[#2d7a2d] transition">Accountant@RightMove-ca.com</a>
-            </div>
-        </div>
-    </div>
-</section>
-
-<footer class="bg-[#86b691] pt-20 pb-16 px-10 text-white">
-    <div class="max-w-7xl mx-auto grid grid-cols-1 md:grid-cols-4 gap-12 mb-16">
-        <div class="flex items-center justify-center md:justify-start">
+<!-- Footers -->
+<footer class="bg-[#86b691] pt-16 pb-12 px-6 md:px-10 text-white w-full">
+    <div class="max-w-7xl mx-auto grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-12 mb-12 text-center sm:text-left">
+        <div class="flex items-center justify-center sm:justify-start">
             <div class="w-24 h-24 bg-black/20 rounded-lg flex items-center justify-center">
                 <img src="assets/logo.png" alt="Logo">
             </div>
         </div>
         <div>
-            <h4 class="font-bold text-xl mb-6">Quick Links</h4>
+            <h4 class="font-bold text-xl mb-4 md:mb-6">Quick Links</h4>
             <ul class="space-y-3 opacity-90">
                 <li><a href="#home" class="hover:underline">Home</a></li>
                 <li><a href="#services" class="hover:underline">About Us</a></li>
@@ -212,7 +178,7 @@
             </ul>
         </div>
         <div>
-            <h4 class="font-bold text-xl mb-6">Important Links</h4>
+            <h4 class="font-bold text-xl mb-4 md:mb-6">Important Links</h4>
             <ul class="space-y-3 opacity-90">
                 <li><a href="#" class="hover:underline">Terms and Conditions</a></li>
                 <li><a href="#" class="hover:underline">Legal</a></li>
@@ -221,18 +187,28 @@
             </ul>
         </div>
         <div>
-            <h4 class="font-bold text-xl mb-6">Let's Connect!</h4>
+            <h4 class="font-bold text-xl mb-4 md:mb-6">Let's Connect!</h4>
             <p class="opacity-90">Connect with entrepreneurs, build your network, make great business.</p>
         </div>
     </div>
 </footer>
 
-<div class="bg-[#4a7c59] py-10 px-10 text-white">
-    <div class="max-w-7xl mx-auto flex flex-col md:flex-row justify-between text-sm opacity-90">
+<div class="bg-[#4a7c59] py-8 px-6 md:px-10 text-white w-full">
+    <div class="max-w-7xl mx-auto flex flex-col md:flex-row justify-between items-center text-sm opacity-90 space-y-2 md:space-y-0 text-center">
         <p>Copyright © 2026 Right Move Group</p>
         <p>Powered by Right Move Group</p>
     </div>
 </div>
 
+<!-- Simple Mobile Menu Script -->
+<script>
+    const mobileMenuBtn = document.getElementById('mobile-menu-btn');
+    const navLinks = document.getElementById('nav-links');
+
+    mobileMenuBtn.addEventListener('click', () => {
+        navLinks.classList.toggle('hidden');
+        navLinks.classList.toggle('flex');
+    });
+</script>
 </body>
 </html>
