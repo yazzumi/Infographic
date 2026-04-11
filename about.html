@@ -11,37 +11,41 @@
 
    <div class="relative min-h-[600px] md:min-h-[600px]">
     <div class="absolute inset-0 z-0 h-full">
-        <img src="assets/meeting-room.jpg" alt="Team Meeting" class="w-full h-full object-cover">
+        <img src="assets/14.png" alt="Team Meeting" class="w-full h-full object-cover">
         <div class="absolute inset-0 bg-black/75"></div>
     </div>
 
-    <nav class="relative z-50 flex justify-end items-center px-10 md:px-24 py-10">
-        <ul class="flex gap-8 text-sm md:text-base font-medium text-white/90">
-            <li><a href="index.html" class="hover:text-white transition-colors">Home</a></li>
-            <li><a href="about.html" class="text-white">About Us</a></li>
-            <li><a href="clients.html" class="hover:text-white transition-colors">Clients & Industries</a></li>
-            <li><a href="contacts.html" class="hover:text-white transition-colors">Contact</a></li>
-        </ul>
-    </nav>
+   <nav class="absolute top-12 right-6 md:right-12 lg:right-24 z-50 flex justify-end">
+            <button id="mobile-menu-btn" class="md:hidden text-green-800 text-3xl focus:outline-none z-50">
+                <i class="fa-solid fa-bars"></i>
+            </button>
+
+            <div id="nav-links" class="hidden absolute top-12 right-0 bg-white shadow-lg p-6 rounded min-w-[200px] flex-col space-y-4 md:static md:bg-transparent md:shadow-none md:p-0 md:min-w-0 md:flex md:flex-row md:items-center md:space-y-0 md:space-x-10 text-white transition-all">
+                <a href="index.html" class=" text-lg hover:text-green-700 transition">Home</a>
+                <a href="about.html" class=" text-lg hover:text-green-700 transition whitespace-nowrap">About Us</a>
+                <a href="clients.html" class=" text-lg hover:text-green-700 transition whitespace-nowrap">Clients & Industries</a>
+                <a href="contacts.html" class="text-lg hover:text-green-700 transition">Contact</a>
+            </div>
+        </nav>
+
 
     <section id="about" class="relative z-10 grid grid-cols-1 lg:grid-cols-2 px-10 md:px-24 pt-16 pb-32">
         
-        <div class="max-w-xl"> 
-            <h2 class="text-5xl md:text-5xl font-bold text-white mb-6 tracking-tight">
+        <div class="absolute top-[220px] left-[170px] max-w-2xl text-wrap"> 
+            <h2 class="text-5xl md:text-5xl font-bold text-white mb-6 tracking-wide font-bold">
                 About Us
             </h2>
             
-            <p class="text-md md:text-xl text-white font-normal leading-relaxed">
+            <p class="text-base md:text-lg text-white font-normal leading-relaxed tracking-wider font-sans">
                 At <span class="font-bold">Right Move Group</span>, we believe accounting is about more than just numbers—it’s about your peace of mind. We are a team of dedicated professionals committed to simplifying the complexities of tax and finance for individuals and growing businesses. By combining modern technology with a personal, proactive approach, we help you navigate your financial journey with clarity and confidence.
             </p>
         </div>
 
-        <div class="hidden lg:block"></div>
-
+            
     </section>
 </div>
 
-    <section class="relative py-40 bg-white overflow-hidden">
+    <section class="relative py-40 bg-white overflow-hidden font-sans">
         
         <div class="absolute -top-[400px] -right-8 w-[800px] h-[800px] bg-transparent rounded-full border-[250px] border-gray-100 z-0"></div>
         <div class="absolute -bottom-[400px] -left-2 w-[800px] h-[800px] bg-transparent rounded-full border-[250px] border-gray-100 z-0"></div>
