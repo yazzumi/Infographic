@@ -1,0 +1,35 @@
+html, body {
+    background: #f9f8f4;
+}
+
+:root {
+    --design-width: 1440;
+    --page-scale: 1;
+}
+
+#page-scale-container {
+    width: 100%;
+    position: relative;
+    overflow: hidden;
+    visibility: hidden;
+}
+
+#page-desktop {
+    width: calc(var(--design-width) * 1px);
+    transform: scale(var(--page-scale));
+    transform-origin: top left;
+    will-change: transform;
+}
+
+#page-desktop,
+#page-desktop * {
+    box-sizing: border-box;
+}
+
+.nav-link {
+    transition: color 0.3s ease;
+}
+
+.nav-link:hover {
+    color: #ffffff;
+}

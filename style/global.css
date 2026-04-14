@@ -1,0 +1,58 @@
+html, body {
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden;
+}
+
+body {
+    font-family: 'Open Sans', sans-serif;
+}
+
+.fade-in,
+.fade-in-left,
+.fade-in-right {
+    opacity: 0;
+    transition: all 0.8s ease;
+}
+
+.fade-in {
+    transform: translateY(30px);
+}
+
+.fade-in-left {
+    transform: translateX(-40px);
+}
+
+.fade-in-right {
+    transform: translateX(40px);
+}
+
+.visible {
+    opacity: 1;
+    transform: translate(0, 0);
+}
+
+.nav-link {
+    transition: color 0.3s ease;
+}
+
+.stagger-1 { transition-delay: 0.05s; }
+.stagger-2 { transition-delay: 0.10s; }
+.stagger-3 { transition-delay: 0.15s; }
+.stagger-4 { transition-delay: 0.20s; }
+.stagger-5 { transition-delay: 0.25s; }
+.stagger-6 { transition-delay: 0.30s; }
+.stagger-7 { transition-delay: 0.35s; }
+.stagger-8 { transition-delay: 0.10s; }
+.stagger-9 { transition-delay: 0.15s; }
+.stagger-10 { transition-delay: 0.20s; }
+.stagger-11 { transition-delay: 0.25s; }
+.stagger-12 { transition-delay: 0.10s; }
+.stagger-13 { transition-delay: 0.15s; }
+.stagger-14 { transition-delay: 0.20s; }
+.stagger-15 { transition-delay: 0.25s; }
+.stagger-16 { transition-delay: 0.30s; }
+.stagger-17 { transition-delay: 0.35s; }
+.stagger-18 { transition-delay: 0.40s; }
+.stagger-19 { transition-delay: 0.45s; }
+.stagger-20 { transition-delay: 0.10s; }

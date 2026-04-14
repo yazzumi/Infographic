@@ -3,117 +3,15 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="output.css">
+    <link rel="stylesheet" href="../output.css">
+    <link rel="stylesheet" href="../style/index.css">
+    <link rel="stylesheet" href="../style/global.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
-    <link rel="icon" href="assets/logo.png" type="image/icon">
+    <link rel="icon" href="../assets/logo.png" type="image/icon">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600;700&display=swap" rel="stylesheet">
     <title>Right Move Group</title>
-
-    <style>
-        html, body {
-            margin: 0;
-            padding: 0;
-            overflow-x: hidden;
-            background: #ffffff;
-        }
-
-        body {
-            font-family: 'Open Sans', sans-serif;
-        }
-
-        :root {
-            --design-width: 1440;
-            --page-scale: 1;
-        }
-
-        /* Outer box takes the scaled height */
-        #page-scale-container {
-            width: 100%;
-            position: relative;
-            overflow: hidden;
-        }
-
-        /* Actual desktop canvas */
-        #page-desktop {
-            width: calc(var(--design-width) * 1px);
-            transform: scale(var(--page-scale));
-            transform-origin: top left;
-            will-change: transform;
-        }
-
-        /* Optional: avoid weird text rendering on some browsers */
-        #page-desktop,
-        #page-desktop * {
-            box-sizing: border-box;
-        }
-
-        /* Fade-in animation styles */
-        .fade-in,
-        .fade-in-left,
-        .fade-in-right {
-            opacity: 0;
-            transition: all 0.8s ease;
-        }
-
-        .fade-in {
-            transform: translateY(30px);
-        }
-
-        .fade-in-left {
-            transform: translateX(-40px);
-        }
-
-        .fade-in-right {
-            transform: translateX(40px);
-        }
-
-        .visible {
-            opacity: 1;
-            transform: translate(0, 0);
-        }
-
-        .stagger-1 { transition-delay: 0.05s; }
-        .stagger-2 { transition-delay: 0.10s; }
-        .stagger-3 { transition-delay: 0.15s; }
-        .stagger-4 { transition-delay: 0.20s; }
-        .stagger-5 { transition-delay: 0.25s; }
-        .stagger-6 { transition-delay: 0.30s; }
-        .stagger-7 { transition-delay: 0.35s; }
-        .stagger-8 { transition-delay: 0.10s; }
-        .stagger-9 { transition-delay: 0.15s; }
-        .stagger-10 { transition-delay: 0.20s; }
-        .stagger-11 { transition-delay: 0.25s; }
-        .stagger-12 { transition-delay: 0.10s; }
-        .stagger-13 { transition-delay: 0.15s; }
-        .stagger-14 { transition-delay: 0.20s; }
-        .stagger-15 { transition-delay: 0.25s; }
-        .stagger-16 { transition-delay: 0.30s; }
-        .stagger-17 { transition-delay: 0.35s; }
-        .stagger-18 { transition-delay: 0.40s; }
-        .stagger-19 { transition-delay: 0.45s; }
-        .stagger-20 { transition-delay: 0.10s; }
-
-        /* Keep hover elegant */
-        .service-card,
-        .industry-card {
-            transition: transform 0.35s ease, box-shadow 0.35s ease;
-        }
-
-        .service-card:hover,
-        .industry-card:hover {
-            transform: translateY(-6px);
-        }
-
-        .industry-card img {
-            transition: transform 0.5s ease;
-        }
-
-        .industry-card:hover img {
-            transform: scale(1.08);
-        }
-    </style>
 </head>
 <body class="bg-white text-gray-800">
 
@@ -122,7 +20,7 @@
 
         <!-- HERO -->
         <section class="relative h-[550px] w-full flex flex-col">
-            <img src="assets/1.png" alt="" class="absolute inset-0 w-full h-full object-cover">
+            <img src="../assets/1.png" alt="" class="absolute inset-0 w-full h-full object-cover">
             <div class="absolute inset-0 bg-white/75"></div>
 
             <div class="relative z-10 w-full h-full px-24">
@@ -137,7 +35,7 @@
 
                 <header class="h-full flex flex-col pt-12 pb-12">
                     <div class="flex items-center gap-4 mb-28">
-                        <img src="assets/logo.png" class="h-36 mix-blend-multiply object-contain" alt="logo">
+                        <img src="../assets/logo.png" class="h-36 mix-blend-multiply object-contain" alt="logo">
                         <span class="font-bold tracking-wide text-green-700 text-3xl">RIGHT MOVE GROUP</span>
                     </div>
 
@@ -251,7 +149,7 @@
                         <div class="industry-card bg-[#86b691] px-4 pb-3 pt-8 flex flex-col items-center">
                             <h3 class="text-white font-serif text-start h-12 text-xl flex items-center w-full">Cleaning Companies</h3>
                             <div class="w-full h-[176px] pt-4 overflow-hidden shadow-lg">
-                                <img src="assets/2.png" class="w-full h-full object-cover">
+                                <img src="../assets/2.png" class="w-full h-full object-cover">
                             </div>
                         </div>
 
@@ -260,14 +158,14 @@
                                 Property Management <br> Companies
                             </h3>
                             <div class="w-full h-[176px] pt-4 overflow-hidden shadow-lg">
-                                <img src="assets/4.png" class="w-full h-full object-cover">
+                                <img src="../assets/4.png" class="w-full h-full object-cover">
                             </div>
                         </div>
 
                         <div class="industry-card bg-[#f1fcf1] px-4 pb-3 pt-8 flex flex-col items-center border-x border-gray-100">
                             <h3 class="text-[#1e264f] font-serif text-start text-xl h-12 flex items-center w-full">Real Estate Investors</h3>
                             <div class="w-full h-[176px] pt-4 overflow-hidden shadow-lg">
-                                <img src="assets/5.png" class="w-full h-full object-cover">
+                                <img src="../assets/5.png" class="w-full h-full object-cover">
                             </div>
                         </div>
 
@@ -276,7 +174,7 @@
                                 Other Businesses Across <br> Various Industries
                             </h3>
                             <div class="w-full h-[176px] pt-4 overflow-hidden shadow-lg">
-                                <img src="assets/6.png" class="w-full h-full object-cover">
+                                <img src="../assets/6.png" class="w-full h-full object-cover">
                             </div>
                         </div>
                     </div>
@@ -289,7 +187,7 @@
             <div class="max-w-7xl mx-auto grid grid-cols-4 gap-12 mb-12 text-left">
                 <div class="flex items-center justify-start">
                     <div class="w-36 h-36 rounded-lg flex items-center justify-center">
-                        <img class="w-full h-full" src="assets/logo.png" alt="Logo">
+                        <img class="w-full h-full" src="../assets/logo.png" alt="Logo">
                     </div>
                 </div>
 
@@ -330,46 +228,7 @@
     </div>
 </div>
 
-<script>
-    function updatePageScale() {
-        const designWidth = 1440;
-        const container = document.getElementById('page-scale-container');
-        const desktop = document.getElementById('page-desktop');
-
-        const viewportWidth = window.innerWidth;
-        const scale = Math.min(viewportWidth / designWidth, 1);
-
-        document.documentElement.style.setProperty('--page-scale', scale);
-
-        requestAnimationFrame(() => {
-            const scaledHeight = desktop.offsetHeight * scale;
-            container.style.height = scaledHeight + 'px';
-        });
-    }
-
-    window.addEventListener('load', updatePageScale);
-    window.addEventListener('resize', updatePageScale);
-
-    // Scroll-triggered fade-in animation
-    const observerOptions = {
-        threshold: 0.1,
-        rootMargin: '0px 0px -50px 0px'
-    };
-
-    const observer = new IntersectionObserver((entries) => {
-        entries.forEach(entry => {
-            if (entry.isIntersecting) {
-                entry.target.classList.add('visible');
-            }
-        });
-    }, observerOptions);
-
-    document.addEventListener('DOMContentLoaded', () => {
-        const fadeElements = document.querySelectorAll('.fade-in, .fade-in-left, .fade-in-right');
-        fadeElements.forEach(element => observer.observe(element));
-        updatePageScale();
-    });
-</script>
+<script src="../script/index.js"></script>
 
 </body>
 </html>

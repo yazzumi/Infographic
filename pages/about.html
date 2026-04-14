@@ -3,179 +3,14 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="output.css">
-    <link rel="icon" href="assets/logo.png" type="image/icon">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <link rel="stylesheet" href="../output.css">
+    <link rel="stylesheet" href="../style/global-zoom.css">
+    <link rel="stylesheet" href="../style/about.css">
+    <link rel="icon" href="../assets/logo.png" type="image/icon">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600;700&display=swap" rel="stylesheet">
     <title>About Us</title>
-
-    <style>
-        html, body {
-            margin: 0;
-            padding: 0;
-            overflow-x: hidden;
-            background: #4a7c59;
-        }
-
-        body {
-            font-family: 'Open Sans', sans-serif;
-        }
-
-        :root {
-            --page-zoom: 1;
-        }
-
-        #page-shell {
-            width: 100%;
-            overflow-x: hidden;
-            background: #ffffff;
-        }
-
-        #page-desktop {
-            width: 1440px;
-            margin: 0 auto;
-            padding: 0;
-            background: #ffffff;
-            display: flex;
-            flex-direction: column;
-            min-height: 100vh;
-            transform-origin: top left;
-        }
-
-        @media (max-width: 1440px) {
-            :root {
-                --page-zoom: calc(100vw / 1440px);
-            }
-
-            #page-desktop {
-                zoom: var(--page-zoom);
-                min-height: calc(100vh / var(--page-zoom));
-            }
-        }
-
-        .page-main {
-            flex: 1 0 auto;
-            display: flex;
-            flex-direction: column;
-        }
-
-        .hero-section {
-            height: 600px;
-            flex-shrink: 0;
-        }
-
-        .about-main-section {
-            flex: 1 0 auto;
-            position: relative;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            overflow: hidden;
-            padding: 70px 24px 90px;
-            background: #ffffff;
-        }
-
-        .about-main-inner {
-            position: relative;
-            z-index: 2;
-            width: 100%;
-            max-width: 980px;
-            margin: 0 auto;
-            text-align: center;
-        }
-
-        .about-content-stack {
-            display: flex;
-            flex-direction: column;
-            justify-content: center;
-            gap: 52px;
-            min-height: 560px;
-        }
-
-        .about-circle-top {
-            position: absolute;
-            top: -400px;
-            right: -30px;
-            width: 760px;
-            height: 760px;
-            border-radius: 9999px;
-            border: 150px solid #f1f1f3;
-            z-index: 1;
-            pointer-events: none;
-        }
-
-        .about-circle-bottom {
-            position: absolute;
-            bottom: -400px;
-            left: -30px;
-            width: 760px;
-            height: 760px;
-            border-radius: 9999px;
-            border: 150px solid #f1f1f3;
-            z-index: 1;
-            pointer-events: none;
-        }
-
-        .page-footer {
-            flex-shrink: 0;
-        }
-
-        .fade-in,
-        .fade-in-left,
-        .fade-in-right {
-            opacity: 0;
-            transition: all 0.8s ease;
-        }
-
-        .fade-in {
-            transform: translateY(30px);
-        }
-
-        .fade-in-left {
-            transform: translateX(-40px);
-        }
-
-        .fade-in-right {
-            transform: translateX(40px);
-        }
-
-        .visible {
-            opacity: 1;
-            transform: translate(0, 0);
-        }
-
-        .stagger-1 { transition-delay: 0.05s; }
-        .stagger-2 { transition-delay: 0.10s; }
-        .stagger-3 { transition-delay: 0.15s; }
-        .stagger-4 { transition-delay: 0.20s; }
-        .stagger-5 { transition-delay: 0.25s; }
-        .stagger-6 { transition-delay: 0.30s; }
-        .stagger-7 { transition-delay: 0.10s; }
-        .stagger-8 { transition-delay: 0.15s; }
-        .stagger-9 { transition-delay: 0.20s; }
-        .stagger-10 { transition-delay: 0.25s; }
-        .stagger-11 { transition-delay: 0.30s; }
-        .stagger-12 { transition-delay: 0.10s; }
-
-        .nav-link {
-            transition: color 0.3s ease;
-        }
-
-        .nav-link:hover {
-            color: #86b691;
-        }
-
-        .about-block h2 {
-            margin-bottom: 10px;
-        }
-
-        .about-block p {
-            max-width: 760px;
-            margin: 0 auto;
-        }
-    </style>
 </head>
 <body>
 
@@ -186,7 +21,7 @@
             <!-- HERO -->
             <section class="hero-section relative w-full">
                 <div class="absolute inset-0 z-0 h-full">
-                    <img src="assets/14.png" alt="Team Meeting" class="w-full h-full object-cover">
+                    <img src="../assets/14.png" alt="Team Meeting" class="w-full h-full object-cover">
                     <div class="absolute inset-0 bg-black/75"></div>
                 </div>
 
@@ -257,7 +92,7 @@
                 <div class="max-w-7xl mx-auto grid grid-cols-4 gap-12 mb-12 text-left">
                     <div class="flex items-center justify-start">
                         <div class="w-36 h-36 rounded-lg flex items-center justify-center">
-                            <img class="w-full h-full" src="assets/logo.png" alt="Logo">
+                            <img class="w-full h-full" src="../assets/logo.png" alt="Logo">
                         </div>
                     </div>
 
@@ -298,25 +133,7 @@
     </div>
 </div>
 
-<script>
-    const observerOptions = {
-        threshold: 0.1,
-        rootMargin: '0px 0px -50px 0px'
-    };
-
-    const observer = new IntersectionObserver((entries) => {
-        entries.forEach(entry => {
-            if (entry.isIntersecting) {
-                entry.target.classList.add('visible');
-            }
-        });
-    }, observerOptions);
-
-    document.addEventListener('DOMContentLoaded', () => {
-        const fadeElements = document.querySelectorAll('.fade-in, .fade-in-left, .fade-in-right');
-        fadeElements.forEach(element => observer.observe(element));
-    });
-</script>
+<script src="../script/about.js"></script>
 
 </body>
 </html>

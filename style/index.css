@@ -1,0 +1,45 @@
+html, body {
+    background: #ffffff;
+}
+
+:root {
+    --design-width: 1440;
+    --page-scale: 1;
+}
+
+#page-scale-container {
+    width: 100%;
+    position: relative;
+    overflow: hidden;
+    visibility: hidden;
+}
+
+#page-desktop {
+    width: calc(var(--design-width) * 1px);
+    transform: scale(var(--page-scale));
+    transform-origin: top left;
+    will-change: transform;
+}
+
+#page-desktop,
+#page-desktop * {
+    box-sizing: border-box;
+}
+
+.service-card,
+.industry-card {
+    transition: transform 0.35s ease, box-shadow 0.35s ease;
+}
+
+.service-card:hover,
+.industry-card:hover {
+    transform: translateY(-6px);
+}
+
+.industry-card img {
+    transition: transform 0.5s ease;
+}
+
+.industry-card:hover img {
+    transform: scale(1.08);
+}

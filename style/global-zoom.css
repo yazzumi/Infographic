@@ -1,0 +1,126 @@
+html, body {
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden;
+}
+
+body {
+    font-family: 'Open Sans', sans-serif;
+}
+
+:root {
+    --page-zoom: 1;
+}
+
+#page-shell {
+    width: 100%;
+    overflow-x: hidden;
+}
+
+#page-desktop {
+    width: 1440px;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    transform-origin: top left;
+}
+
+@media (max-width: 1440px) {
+    :root {
+        --page-zoom: calc(100vw / 1440px);
+    }
+
+    #page-desktop {
+        zoom: var(--page-zoom);
+        min-height: calc(100vh / var(--page-zoom));
+    }
+}
+
+.page-main {
+    flex: 1 0 auto;
+    display: flex;
+    flex-direction: column;
+}
+
+.page-footer {
+    flex-shrink: 0;
+}
+
+.fade-in,
+.fade-in-left,
+.fade-in-right {
+    opacity: 0;
+    transition: all 0.8s ease;
+}
+
+.fade-in {
+    transform: translateY(30px);
+}
+
+.fade-in-left {
+    transform: translateX(-40px);
+}
+
+.fade-in-right {
+    transform: translateX(40px);
+}
+
+.visible {
+    opacity: 1;
+    transform: translate(0, 0);
+}
+
+.stagger-1 { transition-delay: 0.05s; }
+.stagger-2 { transition-delay: 0.10s; }
+.stagger-3 { transition-delay: 0.15s; }
+.stagger-4 { transition-delay: 0.20s; }
+.stagger-5 { transition-delay: 0.25s; }
+.stagger-6 { transition-delay: 0.30s; }
+.stagger-7 { transition-delay: 0.35s; }
+.stagger-8 { transition-delay: 0.10s; }
+.stagger-9 { transition-delay: 0.15s; }
+.stagger-10 { transition-delay: 0.20s; }
+.stagger-11 { transition-delay: 0.25s; }
+.stagger-12 { transition-delay: 0.10s; }
+
+.nav-link {
+    transition: color 0.3s ease;
+}
+
+/* Fade-in animations */
+.fade-in,
+.fade-in-left,
+.fade-in-right {
+    opacity: 0;
+    transition: all 0.8s ease;
+}
+
+.fade-in {
+    transform: translateY(30px);
+}
+
+.fade-in-left {
+    transform: translateX(-40px);
+}
+
+.fade-in-right {
+    transform: translateX(40px);
+}
+
+.visible {
+    opacity: 1;
+    transform: translate(0, 0);
+}
+
+.stagger-1 { transition-delay: 0.05s; }
+.stagger-2 { transition-delay: 0.10s; }
+.stagger-3 { transition-delay: 0.15s; }
+.stagger-4 { transition-delay: 0.20s; }
+.stagger-5 { transition-delay: 0.25s; }
+.stagger-6 { transition-delay: 0.30s; }
+.stagger-7 { transition-delay: 0.35s; }
+.stagger-8 { transition-delay: 0.10s; }
+.stagger-9 { transition-delay: 0.15s; }
+.stagger-10 { transition-delay: 0.20s; }

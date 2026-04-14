@@ -3,87 +3,16 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="output.css">
-    <link rel="icon" href="assets/logo.png" type="image/icon">
+    <link rel="stylesheet" href="../output.css">
+    <link rel="stylesheet" href="../style/global.css">
+    <link rel="stylesheet" href="../style/clients.css">
+    <link rel="icon" href="../assets/logo.png" type="image/icon">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600;700&display=swap" rel="stylesheet">
     <title>Clients & Industries</title>
 
-    <style>
-        html, body {
-            margin: 0;
-            padding: 0;
-            overflow-x: hidden;
-            background: #f9f8f4;
-        }
-
-        body {
-            font-family: 'Open Sans', sans-serif;
-        }
-
-        :root {
-            --design-width: 1440;
-            --page-scale: 1;
-        }
-
-        #page-scale-container {
-            width: 100%;
-            position: relative;
-            overflow: hidden;
-        }
-
-        #page-desktop {
-            width: calc(var(--design-width) * 1px);
-            transform: scale(var(--page-scale));
-            transform-origin: top left;
-            will-change: transform;
-        }
-
-        #page-desktop,
-        #page-desktop * {
-            box-sizing: border-box;
-        }
-
-        .fade-in,
-        .fade-in-left,
-        .fade-in-right {
-            opacity: 0;
-            transition: all 0.8s ease;
-        }
-
-        .fade-in {
-            transform: translateY(30px);
-        }
-
-        .fade-in-left {
-            transform: translateX(-40px);
-        }
-
-        .fade-in-right {
-            transform: translateX(40px);
-        }
-
-        .visible {
-            opacity: 1;
-            transform: translate(0, 0);
-        }
-
-        .stagger-1 { transition-delay: 0.10s; }
-        .stagger-2 { transition-delay: 0.15s; }
-        .stagger-3 { transition-delay: 0.20s; }
-        .stagger-4 { transition-delay: 0.25s; }
-
-        .nav-link {
-            transition: color 0.3s ease;
-        }
-
-        .nav-link:hover {
-            color: #ffffff;
-        }
-
-
-    </style>
+   
 </head>
 <body>
 
@@ -93,17 +22,17 @@
         <!-- HERO -->
         <section class="relative h-[600px] bg-black">
             <div class="absolute inset-0 z-0 h-full bg-white">
-                <img src="assets/16.png" alt="Business Meeting" class="w-full h-full object-cover">
+                <img src="../assets/16.png" alt="Business Meeting" class="w-full h-full object-cover">
                 <div class="absolute inset-0 h-full bg-black/50"></div>
             </div>
 
-            <nav class="absolute top-10 right-24 z-50 flex justify-end items-center">
-                <ul class="flex gap-8 text-base font-medium text-white/90">
-                    <li><a href="index.html" class="nav-link">Home</a></li>
-                    <li><a href="about.html" class="nav-link">About Us</a></li>
-                    <li><a href="clients.html" class="text-white">Clients & Industries</a></li>
-                    <li><a href="contacts.html" class="nav-link">Contact</a></li>
-                </ul>
+            <nav class="absolute top-10 right-24 z-50 flex justify-end">
+                <div class="flex flex-row items-center space-x-10 text-white/90">
+                    <a href="index.html" class="text-base hover:text-green-700 transition fade-in stagger-1">Home</a>
+                    <a href="about.html" class="text-base hover:text-green-700 transition whitespace-nowrap fade-in stagger-2">About Us</a>
+                    <a href="clients.html" class="text-base text-white fade-in stagger-3">Clients & Industries</a>
+                    <a href="contacts.html" class="text-base hover:text-green-700 transition fade-in stagger-4">Contact</a>
+                </div>
             </nav>
 
             <div class="relative z-10 h-full px-24 pt-16 pb-32 fade-in">
@@ -136,8 +65,8 @@
                     <!-- 1 -->
                     <div class="relative flex items-center fade-in-left stagger-1">
                         <div class="relative z-50 industry-panel bg-[#8db697] p-16 pl-24 w-[820px] ml-[420px] min-h-[320px] shadow-md">
-                            <img src="assets/17.png" alt="Cleaning Service" class="floating-image absolute -left-[700px] -top-[115px] z-20">
-                            <img src="assets/18.png" alt="Cleaning Service" class="floating-image absolute -left-[490px] top-1/2 -translate-y-1/2">
+                            <img src="../assets/17.png" alt="Cleaning Service" class="floating-image absolute -left-[700px] -top-[115px] z-20">
+                            <img src="../assets/18.png" alt="Cleaning Service" class="floating-image absolute -left-[490px] top-1/2 -translate-y-1/2">
                             <h3 class="text-3xl font-bold text-white mb-6">Cleaning Companies</h3>
                             <p class="text-white/95 leading-relaxed text-lg">
                                 Cleaning businesses often handle multiple clients, recurring service schedules, and employee payroll. We help cleaning companies maintain organized books, manage payroll efficiently, and track business expenses to ensure smooth financial operations and long-term stability.
@@ -148,8 +77,8 @@
                     <!-- 2 -->
                     <div class="relative flex items-center justify-end fade-in-right stagger-2">
                         <div class="relative z-50 industry-panel bg-[#4a7c59] p-16 pl-24 w-[820px] mr-[420px] min-h-[320px] shadow-md">
-                            <img src="assets/19.png" alt="Property Management" class="floating-image absolute left-[700px] -top-[115px] z-20">
-                            <img src="assets/20.png" alt="Property Management" class="floating-image absolute left-[490px] top-1/2 -translate-y-1/2">
+                            <img src="../assets/19.png" alt="Property Management" class="floating-image absolute left-[700px] -top-[115px] z-20">
+                            <img src="../assets/20.png" alt="Property Management" class="floating-image absolute left-[490px] top-1/2 -translate-y-1/2">
                             <h3 class="text-3xl font-bold text-white mb-6">Property Management Companies</h3>
                             <p class="text-white/95 leading-relaxed text-lg">
                                 Property management involves managing rent payments, maintenance costs, and financial records for multiple properties. Our accounting services help property managers track income and expenses accurately while maintaining clear and organized financial reports.
@@ -160,8 +89,8 @@
                     <!-- 3 -->
                     <div class="relative flex items-center fade-in-left stagger-3">
                         <div class="relative z-50 industry-panel bg-[#8db697] p-16 pl-24 w-[820px] ml-[420px] min-h-[320px] shadow-md">
-                            <img src="assets/21.png" alt="Real Estate Investors" class="floating-image absolute -left-[700px] -top-[115px] z-20">
-                            <img src="assets/22.png" alt="Real Estate Investors" class="floating-image absolute -left-[490px] top-1/2 -translate-y-1/2">
+                            <img src="../assets/21.png" alt="Real Estate Investors" class="floating-image absolute -left-[700px] -top-[115px] z-20">
+                            <img src="../assets/22.png" alt="Real Estate Investors" class="floating-image absolute -left-[490px] top-1/2 -translate-y-1/2">
                             <h3 class="text-3xl font-bold text-white mb-6">Real Estate Investors</h3>
                             <p class="text-white/95 leading-relaxed text-lg">
                                 Real estate investors require detailed financial tracking for property income, expenses, and tax planning. We help investors maintain accurate financial records and provide insights that support smarter investment decisions and long-term growth.
@@ -172,8 +101,8 @@
                     <!-- 4 -->
                     <div class="relative flex items-center justify-end fade-in-right stagger-4">
                         <div class="relative z-50 industry-panel bg-[#4a7c59] p-16 pl-24 w-[820px] mr-[420px] min-h-[320px] shadow-md">
-                            <img src="assets/23.png" alt="Various Industries" class="floating-image absolute left-[700px] -top-[115px] z-20">
-                            <img src="assets/24.png" alt="Various Industries" class="floating-image absolute left-[490px] top-1/2 -translate-y-1/2">
+                            <img src="../assets/23.png" alt="Various Industries" class="floating-image absolute left-[700px] -top-[115px] z-20">
+                            <img src="../assets/24.png" alt="Various Industries" class="floating-image absolute left-[490px] top-1/2 -translate-y-1/2">
                             <h3 class="text-3xl font-bold text-white mb-6">Other Businesses Across Various Industries</h3>
                             <p class="text-white/95 leading-relaxed text-lg">
                                 In addition to the industries listed above, we work with many small and growing businesses across various sectors. Our flexible and personalized approach allows us to adapt our services to the unique financial needs of each business.
@@ -190,7 +119,7 @@
             <div class="max-w-7xl mx-auto grid grid-cols-4 gap-12 mb-12 text-left">
                 <div class="flex items-center justify-start">
                     <div class="w-36 h-36 rounded-lg flex items-center justify-center">
-                        <img class="w-full h-full" src="assets/logo.png" alt="Logo">
+                        <img class="w-full h-full" src="../assets/logo.png" alt="Logo">
                     </div>
                 </div>
 
@@ -230,45 +159,7 @@
     </div>
 </div>
 
-<script>
-    function updatePageScale() {
-        const designWidth = 1440;
-        const container = document.getElementById('page-scale-container');
-        const desktop = document.getElementById('page-desktop');
-
-        const viewportWidth = window.innerWidth;
-        const scale = Math.min(viewportWidth / designWidth, 1);
-
-        document.documentElement.style.setProperty('--page-scale', scale);
-
-        requestAnimationFrame(() => {
-            const scaledHeight = desktop.offsetHeight * scale;
-            container.style.height = scaledHeight + 'px';
-        });
-    }
-
-    window.addEventListener('load', updatePageScale);
-    window.addEventListener('resize', updatePageScale);
-
-    const observerOptions = {
-        threshold: 0.1,
-        rootMargin: '0px 0px -50px 0px'
-    };
-
-    const observer = new IntersectionObserver((entries) => {
-        entries.forEach(entry => {
-            if (entry.isIntersecting) {
-                entry.target.classList.add('visible');
-            }
-        });
-    }, observerOptions);
-
-    document.addEventListener('DOMContentLoaded', () => {
-        const fadeElements = document.querySelectorAll('.fade-in, .fade-in-left, .fade-in-right');
-        fadeElements.forEach(element => observer.observe(element));
-        updatePageScale();
-    });
-</script>
+<script src="../script/clients.js"></script>
 
 </body>
 </html>

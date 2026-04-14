@@ -3,193 +3,15 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="output.css">
-    <link rel="icon" href="assets/logo.png" type="image/icon">
+    <link rel="stylesheet" href="../output.css">
+    <link rel="stylesheet" href="../style/global-zoom.css">
+    <link rel="stylesheet" href="../style/privacy-policy.css">
+    <link rel="icon" href="../assets/logo.png" type="image/icon">
+    
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600;700&display=swap" rel="stylesheet">
     <title>Privacy Policy</title>
-
-    <style>
-        html {
-            scroll-behavior: smooth;
-        }
-
-        html, body {
-            margin: 0;
-            padding: 0;
-            overflow-x: hidden;
-            background: #4a7c59;
-        }
-
-        body {
-            font-family: 'Open Sans', sans-serif;
-        }
-
-        :root {
-            --page-zoom: 1;
-        }
-
-        #page-shell {
-            width: 100%;
-            overflow-x: hidden;
-            background: #f6f7f5;
-        }
-
-        #page-desktop {
-            width: 1440px;
-            margin: 0;
-            padding: 0;
-            background: #f6f7f5;
-            display: flex;
-            flex-direction: column;
-            min-height: 100vh;
-            transform-origin: top left;
-        }
-
-        @media (max-width: 1440px) {
-            :root {
-                --page-zoom: calc(100vw / 1440px);
-            }
-
-            #page-desktop {
-                zoom: var(--page-zoom);
-                min-height: calc(100vh / var(--page-zoom));
-            }
-        }
-
-        .page-main {
-            flex: 1 0 auto;
-            position: relative;
-            overflow: hidden;
-            padding: 90px 0 120px;
-        }
-
-        .page-footer {
-            flex-shrink: 0;
-        }
-
-        .content-wrap {
-            position: relative;
-            z-index: 2;
-            width: 100%;
-            max-width: 1150px;
-            margin: 0 auto;
-            padding: 0 70px;
-            box-sizing: border-box;
-        }
-
-        .policy-section {
-            position: relative;
-            z-index: 2;
-            max-width: 980px;
-            margin: 0 auto 180px;
-        }
-
-        .policy-section:last-child {
-            margin-bottom: 0;
-        }
-
-        .policy-title {
-            font-size: 34px;
-            line-height: 1.2;
-            font-weight: 700;
-            color: #3f7d4f;
-            margin: 0 0 26px;
-        }
-
-        .policy-text {
-            font-size: 20px;
-            line-height: 1.9;
-            color: #2f2f2f;
-            margin: 0;
-        }
-
-        .policy-text p {
-            margin: 0 0 26px;
-        }
-
-        .policy-text p:last-child {
-            margin-bottom: 0;
-        }
-
-        .circle-top-right {
-            position: absolute;
-            top: -50px;
-            right: -20px;
-            width: 620px;
-            height: 350px;
-            border-radius: 0 0 9999px 9999px;
-            border: 150px solid #ecefed;
-            border-top: none;
-            z-index: 1;
-            pointer-events: none;
-        }
-
-        .circle-left-mid {
-            position: absolute;
-            top: 530px;
-            left: -20px;
-            width: 620px;
-            height: 310px;
-            border-radius: 9999px 9999px 0 0;
-            border: 150px solid #ecefed;
-            border-bottom: none;
-            z-index: 1;
-            pointer-events: none;
-        }
-
-        .circle-right-mid {
-            position: absolute;
-            top: 850px;
-            right: -20px;
-            width: 620px;
-            height: 310px;
-            border-radius: 0 0 9999px 9999px;
-            border: 150px solid #ecefed;
-            border-top: none;
-            z-index: 1;
-            pointer-events: none;
-        }
-
-        .circle-left-bottom {
-            position: absolute;
-            top: 1200px;
-            left: -20px;
-            width: 620px;
-            height: 310px;
-            border-radius: 9999px 9999px 0 0;
-            border: 150px solid #ecefed;
-            border-bottom: none;
-            z-index: 1;
-            pointer-events: none;
-        }
-
-        .circle-right-bottom {
-            position: absolute;
-            top: 1520px;
-            right: -20px;
-            width: 620px;
-            height: 310px;
-            border-radius: 0 0 9999px 9999px;
-            border: 150px solid #ecefed;
-            border-top: none;
-            z-index: 1;
-            pointer-events: none;
-        }
-        .circle-left-bottom-two {
-            position: absolute;
-            top: 1920px;
-            left: -20px;
-            width: 620px;
-            height: 310px;
-            border-radius: 9999px 9999px 0 0;
-            border: 150px solid #ecefed;
-            border-bottom: none;
-            z-index: 1;
-            pointer-events: none;
-        }
-    </style>
 </head>
 <body>
 
@@ -205,7 +27,7 @@
             <div class="circle-left-bottom-two"></div>
 
             <div class="content-wrap">
-                <section class="policy-section">
+                <section class="policy-section fade-in stagger-1">
                     <h1 class="policy-title">Privacy Policy</h1>
                     <div class="policy-text">
                         <p>
@@ -234,7 +56,7 @@
                     </div>
                 </section>
 
-                <section class="policy-section overflow-hidden">
+                <section class="policy-section overflow-hidden fade-in stagger-2">
                     <h1 class="policy-title">Terms and Conditions</h1>
                     <div class="policy-text">
                         <p>
@@ -259,7 +81,7 @@
                     </div>
                 </section>
 
-                <section class="policy-section">
+                <section class="policy-section fade-in stagger-3">
                     <h1 class="policy-title">Legal Disclaimer</h1>
                     <div class="policy-text">
                         <p>
@@ -283,11 +105,11 @@
         </main>
 
         <div class="page-footer">
-            <footer class="bg-[#86b691] pt-16 pb-12 px-10 text-white w-full">
+            <footer class="bg-[#86b691] pt-16 pb-12 px-10 text-white w-full fade-in stagger-12">
                 <div class="max-w-7xl mx-auto grid grid-cols-4 gap-12 mb-12 text-left">
                     <div class="flex items-center justify-start">
                         <div class="w-36 h-36 rounded-lg flex items-center justify-center">
-                            <img class="w-full h-full" src="assets/logo.png" alt="Logo">
+                            <img class="w-full h-full" src="../assets/logo.png" alt="Logo">
                         </div>
                     </div>
 
@@ -320,7 +142,7 @@
 
             <div class="bg-[#4a7c59] py-8 px-10 text-white w-full">
                 <div class="max-w-7xl mx-auto flex justify-between items-center text-sm opacity-90">
-                    <p>Copyright © 2026 Right Move Group</p>
+                    <p>Copyright 2026 Right Move Group</p>
                     <p>Powered by Right Move Group</p>
                 </div>
             </div>
@@ -328,6 +150,8 @@
 
     </div>
 </div>
+
+<script src="../script/privacy-policy.js"></script>
 
 </body>
 </html>

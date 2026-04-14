@@ -1,0 +1,46 @@
+html, body {
+    background: #4a7c59;
+}
+
+#page-shell,
+#page-desktop {
+    background: #f3f4f6;
+}
+
+#page-desktop {
+    margin: 0;
+    padding: 0;
+}
+
+.nav-link:hover {
+    color: #ffffff;
+}
+
+.hero-section {
+    height: 400px;
+    flex-shrink: 0;
+}
+
+.contact-main-section {
+    flex: 1 0 auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 48px 24px 72px;
+}
+
+.contact-main-inner {
+    width: 100%;
+    max-width: 1152px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.contact-card {
+    transition: transform 0.35s ease, box-shadow 0.35s ease;
+}
+
+.contact-card:hover {
+    transform: translateY(-6px);
+    box-shadow: 0 16px 40px rgba(0, 0, 0, 0.08);
+}
