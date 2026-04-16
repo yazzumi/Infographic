@@ -1,3 +1,9 @@
+let lastViewportWidth = window.innerWidth;
+
+function isPinchZooming() {
+    return window.visualViewport && Math.abs(window.visualViewport.scale - 1) > 0.01;
+}
+
 function updatePageScale() {
     const designWidth = 1440;
     const container = document.getElementById('page-scale-container');
@@ -43,4 +49,13 @@ document.addEventListener('DOMContentLoaded', () => {
     updatePageScale();
 });
 
-window.addEventListener('resize', updatePageScale);
+window.addEventListener('resize', () => {
+    if (isPinchZooming()) return;
+
+    const currentWidth = window.innerWidth;
+
+    if (currentWidth !== lastViewportWidth) {
+        lastViewportWidth = currentWidth;
+        updatePageScale();
+    }
+});
