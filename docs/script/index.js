@@ -1,3 +1,5 @@
+let lastViewportWidth = window.innerWidth;
+
 function updatePageScale() {
     const designWidth = 1440;
     const container = document.getElementById('page-scale-container');
@@ -44,4 +46,12 @@ document.addEventListener('DOMContentLoaded', () => {
     updatePageScale();
 });
 
-window.addEventListener('resize', updatePageScale);
+window.addEventListener('resize', () => {
+    const currentWidth = window.innerWidth;
+
+    // only update if width meaningfully changed
+    if (Math.abs(currentWidth - lastViewportWidth) > 20) {
+        lastViewportWidth = currentWidth;
+        updatePageScale();
+    }
+});
