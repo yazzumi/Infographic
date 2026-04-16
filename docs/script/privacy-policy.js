@@ -6,7 +6,7 @@ function updatePageScale() {
 
     const designWidth = 1440;
     const viewportWidth = window.innerWidth;
-    const scale = Math.min(viewportWidth / designWidth, 1);
+    const scale = viewportWidth / designWidth;
 
     document.documentElement.style.setProperty('--page-scale', scale);
 
