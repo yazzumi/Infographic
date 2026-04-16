@@ -1,17 +1,6 @@
 html, body {
     background: #4a7c59;
 }
-
-#page-shell,
-#page-desktop {
-    background: #ffffff;
-}
-
-#page-desktop {
-    margin: 0 auto;
-    padding: 0;
-}
-
 .nav-link:hover {
     color: #86b691;
 }
