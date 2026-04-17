@@ -17,10 +17,19 @@ html, body {
 }
 
 .page-main {
+    flex: 1 1 auto;
+    display: flex;
+    flex-direction: column;
+    min-height: 100%;
+}
+
+.policy-band {
     position: relative;
     overflow: hidden;
-    padding: 90px 0 120px;
-    flex: 1 1 auto;
+    background: #f6f7f5;
+    padding: 140px 0;
+    min-height: 760px;
+    flex: 1 0 auto;
     display: flex;
     align-items: center;
 }
@@ -29,21 +38,17 @@ html, body {
     position: relative;
     z-index: 2;
     width: 100%;
-    max-width: 1150px;
+    max-width: 1240px;
     margin: 0 auto;
-    padding: 0 70px;
+    padding: 0 90px;
     box-sizing: border-box;
 }
 
 .policy-section {
     position: relative;
     z-index: 2;
-    max-width: 980px;
-    margin: 0 auto 180px;
-}
-
-.policy-section:last-child {
-    margin-bottom: 0;
+    max-width: 1000px;
+    margin: 0 auto;
 }
 
 .policy-title {
@@ -57,7 +62,7 @@ html, body {
 .policy-text {
     font-size: 20px;
     line-height: 1.9;
-    color: #2f2f2f;
+    color: black;
     margin: 0;
 }
 
@@ -69,9 +74,10 @@ html, body {
     margin-bottom: 0;
 }
 
-.circle-top-right {
+/* per-section decorative shapes */
+.band-circle-right-down {
     position: absolute;
-    top: -50px;
+    top: -40px;
     right: -20px;
     width: 620px;
     height: 350px;
@@ -82,9 +88,9 @@ html, body {
     pointer-events: none;
 }
 
-.circle-left-mid {
+.band-circle-left-up {
     position: absolute;
-    top: 530px;
+    bottom: -40px;
     left: -20px;
     width: 620px;
     height: 310px;
@@ -95,54 +101,28 @@ html, body {
     pointer-events: none;
 }
 
-.circle-right-mid {
+.band-circle-right-up {
     position: absolute;
-    top: 850px;
-    right: -20px;
+    bottom: -40px;
+    right: 850px;
     width: 620px;
     height: 310px;
+    border-radius: 9999px 9999px 0 0;
+    border: 150px solid #ecefed;
+    border-bottom: none;
+    z-index: 1;
+    pointer-events: none;
+}
+
+.band-circle-left-down {
+    position: absolute;
+    top: -40px;
+    left: 850px;
+    width: 620px;
+    height: 350px;
     border-radius: 0 0 9999px 9999px;
     border: 150px solid #ecefed;
     border-top: none;
-    z-index: 1;
-    pointer-events: none;
-}
-
-.circle-left-bottom {
-    position: absolute;
-    top: 1200px;
-    left: -20px;
-    width: 620px;
-    height: 310px;
-    border-radius: 9999px 9999px 0 0;
-    border: 150px solid #ecefed;
-    border-bottom: none;
-    z-index: 1;
-    pointer-events: none;
-}
-
-.circle-right-bottom {
-    position: absolute;
-    top: 1520px;
-    right: -20px;
-    width: 620px;
-    height: 310px;
-    border-radius: 0 0 9999px 9999px;
-    border: 150px solid #ecefed;
-    border-top: none;
-    z-index: 1;
-    pointer-events: none;
-}
-
-.circle-left-bottom-two {
-    position: absolute;
-    top: 1920px;
-    left: -20px;
-    width: 620px;
-    height: 310px;
-    border-radius: 9999px 9999px 0 0;
-    border: 150px solid #ecefed;
-    border-bottom: none;
     z-index: 1;
     pointer-events: none;
 }

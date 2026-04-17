@@ -1,3 +1,9 @@
+let lastViewportWidth = window.innerWidth;
+
+function isPinchZooming() {
+    return window.visualViewport && Math.abs(window.visualViewport.scale - 1) > 0.01;
+}
+
 function updatePageScale() {
     const shell = document.getElementById('page-shell');
     const desktop = document.getElementById('page-desktop');
@@ -38,5 +44,19 @@ document.addEventListener('DOMContentLoaded', () => {
 });
 
 window.addEventListener('load', updatePageScale);
-window.addEventListener('resize', updatePageScale);
-window.addEventListener('orientationchange', updatePageScale);
+
+window.addEventListener('resize', () => {
+    if (isPinchZooming()) return;
+
+    const currentWidth = window.innerWidth;
+
+    if (currentWidth !== lastViewportWidth) {
+        lastViewportWidth = currentWidth;
+        updatePageScale();
+    }
+});
+
+window.addEventListener('orientationchange', () => {
+    lastViewportWidth = window.innerWidth;
+    updatePageScale();
+});
